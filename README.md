@@ -57,6 +57,7 @@
 pip install -r requirements.txt
 ```
 
+```bash
 ml_tools/
 │
 ├── homework02.py        # Главный файл запуска
@@ -65,3 +66,4 @@ ml_tools/
 ├── utils/               # Вспомогательные модули (при необходимости)
 ├── README.md            # Документация проекта
 └── requirements.txt     # Зависимости проекта
+```
