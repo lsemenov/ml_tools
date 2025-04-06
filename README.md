@@ -53,10 +53,10 @@
 
 Установить всё можно через:
 
-```bash
+
 pip install -r requirements.txt
 
-
+```bash
 ml_tools/
 │
 ├── homework02.py        # Главный файл запуска
