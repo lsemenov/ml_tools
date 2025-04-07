@@ -32,7 +32,7 @@ class CFG:
     batch_size: int = 200
     test_size: float = 0.2
     num_workers: int = min(2, os.cpu_count())
-    epochs: int = 20
+    epochs: int = 10
     gpus: int = 2
     stride: int = 1
     dilation: int =1
@@ -290,6 +290,7 @@ def main(args, cfg):
         
     
     # Инференс на одном образце
+    dataset.setup("test")
     model.eval()
     sample_img, true_label = dataset.test[0]
     sample = sample_img.unsqueeze(0)  # берём первый образец из теста
@@ -311,6 +312,10 @@ def main(args, cfg):
 if __name__ == "__main__":
     # your code here
     parser = argparse.ArgumentParser()
+    
+    # определён через action="store_true". При таком способе использования флаг устанавливается в True
+    # , если он присутствует, и не требует передачи дополнительного значения. 
+    # То есть, для включения режима fast_dev_run достаточно указать просто флаг без параметров.
     parser.add_argument("--fast_dev_run", action="store_true")
     args = parser.parse_args()
                                                                                        
