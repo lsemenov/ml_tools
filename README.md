@@ -69,8 +69,8 @@ pip install -r requirements.txt
 ml_tools/
 │
 ├── notebooks 
-├── solution             # Папка с Главными файлами для запуска
-    └── homework02.py    # главный файлами для запуска
+├── solution             # Папка с главными файлами для запуска
+    └── homework02.py    #  файл для запуска практики (M2.1_Lightning_practice)
 ├── models/              # Сохраненные веса моделей
 ├── logs/                # (если используется) логи экспериментов
 ├── data/                # Данные
