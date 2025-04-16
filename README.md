@@ -90,7 +90,9 @@ ml_tools/
 │
 ├── notebooks 
 ├── solution             # Папка с главными файлами для запуска
+    └── homework01.py    # АКТУАЛЬНЫЙ файл для запуска практики (M1_ClearML_practice-HARD)
     └── homework02.py    # АКТУАЛЬНЫЙ файл для запуска практики (M2.1_Lightning_practice)
+    └── homework03.py    # АКТУАЛЬНЫЙ файл для запуска практики (M2.2_Trainer_practice)
 ├── models/              # Сохраненные веса моделей
 ├── logs/                # (если используется) логи экспериментов
 ├── data/                # Данные
@@ -103,6 +105,6 @@ ml_tools/
 
 Обучении модели в течение 13 эпох:
 
-- Vall acc: ~0.995
+- Vall acc: ~0.89
 
-- Vall loss: ~0.07
+- Vall loss: ~0.1
