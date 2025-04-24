@@ -1,5 +1,8 @@
 # 🧰 Machine Learning with ClearML and Pytorch Lightning ⚡
 
+[![python](https://img.shields.io/badge/Python-3.12-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
+![PyTorch Lightning](https://img.shields.io/badge/pytorch-lightning-blue.svg?logo=PyTorch%20Lightning)
+[![pytorch](https://img.shields.io/badge/PyTorch-2.5.0-EE4C2C.svg?style=flat&logo=pytorch)](https://pytorch.org)
 
 # 1. Sign Language Classification with PyTorch Lightning
 
@@ -89,19 +92,30 @@ python homework02.py
 ml_tools/
 │
 ├── notebooks 
-├── solution             # Папка с главными файлами для запуска
-    └── homework01.py    # АКТУАЛЬНЫЙ файл для запуска практики (M1_ClearML_practice-HARD)
-    └── homework02.py    # АКТУАЛЬНЫЙ файл для запуска практики (M2.1_Lightning_practice)
-    └── homework03.py    # АКТУАЛЬНЫЙ файл для запуска практики (M2.2_Trainer_practice)
-├── models/              # Сохраненные веса моделей
-├── logs/                # (если используется) логи экспериментов
-├── data/                # Данные
-├── utils/               # Вспомогательные модули (при необходимости)
-├── README.md            # Документация проекта
-└── requirements.txt     # Зависимости проекта
+├── src
+    ├── data/               # Данные
+    ├── features            # Folder for script to build feature
+    ├── models/             # Сохраненные веса моделей and sripts for train/eval
+    ├── utils/              # Вспомогательные модули (при необходимости)
+    ├── visualization
+    └──solution             # Папка с главными файлами для запуска
+        └── homework01.py   # АКТУАЛЬНЫЙ файл для запуска практики (M1_ClearML_practice-HARD)
+        └── homework02.py   # АКТУАЛЬНЫЙ файл для запуска практики (M2.1_Lightning_practice)
+        └── homework03.py   # АКТУАЛЬНЫЙ файл для запуска практики (M2.2_Trainer_practice)
+├── logs/                   # (если используется) логи экспериментов
+├── README.md               # Документация проекта
+└── requirements.txt        # Зависимости проекта
 ```
 
-## Результат
+## Результат 🎯🏆
+
+Графики с процесса обучения^
+
+![training_plot.png](data/training_plot.png)
+
+Картинка с инференса инференса:
+
+![test_picture.png](data/test_picture.png)
 
 Обучении модели в течение 13 эпох:
 
